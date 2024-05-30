@@ -22,7 +22,7 @@ const SkeletonReview = () => {
   );
 };
 
-export default function CustomerReviews() {
+export default function Section5() {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

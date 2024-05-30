@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../Components/navbar";
 import Section1 from "../Components/Section1";
-import Services from "../Components/Services";
 import Section2 from "../Components/Section2";
-import Section3 from "../Components/section3";
+import Section3 from "../Components/Section3";
 import Section4 from "../Components/Section4";
-import Footer from "../Components/footer";
+import Section6 from "../Components/Section6";
 import Section5 from "../Components/Section5";
+import Footer from "../Components/footer";
+
 import '../Styles/style.css';  
 
 const IndexPage = () => {
@@ -17,19 +18,19 @@ const IndexPage = () => {
         <Section1 />
       </div>
       <div className="h-[600px]">
-        <Services />
+        <Section2 />
       </div>
       <div className="h-[1127px]">
-        <Section2/>
+        <Section3/>
       </div>
       <div className="background2 h-[953px]">
-        <Section3/>
+        <Section4/>
       </div>
       <div className="h-[700px] bg-[#F8FDFF]">
         <Section5/>
       </div>
       <div className="h-[698px] bg-[#F8FDFF]">
-        <Section4/>
+        <Section6/>
       </div>
       <div className="h-[385px]">
        <Footer/>

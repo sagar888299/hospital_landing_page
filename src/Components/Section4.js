@@ -1,28 +1,39 @@
-import React from 'react'
+import React from "react";
 
-export default function() {
+const dataArray = [
+  { id: 1, name: "Dr. Awaatif Al", specality: "Dental Care" },
+  { id: 2, name: "Dr. Filipa Gaspar", specality: "Cardiology" },
+  { id: 3, name: "Dr. Sukhmeet Gorae", specality: "Neurological" },
+  { id: 4, name: "Dr. Siri Jakobsson", specality: "Prediatrics" },
+];
+
+export default function Section4() {
   return (
-    <>
-    <div className='flex flex-row-reverse'>
-    <div className='absolute background3 flex flex-row-reverse'>
-    </div>/
+    <div className="flex-col px-[120px] justify-center items-center text-[#002348] font-sans ">
+      <div className="text-center text-5xl font-bold leading-loose mt-[46px]">
+        We Have The Best Specialist
+      </div>
+      <div className="px-[370px] h-[78px] text-base font-normal leading-relaxed text-center">
+        We have a wide experience in experience design and strategy, with
+        locally-rooted knowledge.
+      </div>
+      <div className="flex justify-between">
+        {dataArray.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className="w-[274px] h-[448px] border rounded-[12px] shadow-lg flex-col 
+                             cursor-pointer shadow-lg  hover:outline-none hover:border-sky-500 hover:ring-1 hover:ring-sky-500"
+            >
+              <div className="h-[324px] bg-[#AED3E2] rounded-t-[12px] text-[#002348] text-left "></div>
+              <div className="font-sans">
+                <div className="pl-[34px] font-bold text-[24px] leading-[30.17px] mt-[25px]">{item.name}</div>
+                <div className=" pl-[34px] font-base text-[18px] leading-[22.63px] mt-[12px]">{item.specality}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
-    <div className='flex mx-[120px] justify-center items-center font-sans'>
-
-    <div className='text-center my-[110px] w-[1198px] h-[478px] bg-[#007FF4] rounded-[12px] z-20'
-    >
-   <div className='font-bold text-[48px] leading-[78px] text-[#FFFFFF]  mt-[44px] '>Subscribe to Newsletter</div>
-   <div className='font-base text-[20px] leading-[39px] text-[#FFFFFF] mt-[12px]'>
-   We have a wide experience in experience design and strategy,
-   </div>
-   <div className='h-[120px] bg-[#FFFFFF] mx-[178px] rounded-[12px] flex justify-between px-[36px] items-center mt-[80px]'>
-    <input type = "email" placeholder='Enter your email address' className='w-[546px] h-[39px]'/>
-    <button type = "submit" className='w-[176px] h-[74px] rounded-full bg-[#007FF4] text-[#FFFFFF]' >
-        <span className='font-bold text-[16px]'>  Send Now  </span></button>
-   </div>
-
-    </div>
-    </div>
-    </>
-  )
+  );
 }

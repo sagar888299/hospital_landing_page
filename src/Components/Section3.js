@@ -1,38 +1,59 @@
 import React from "react";
-
-const dataArray = [
-  { id: 1, name: "Dr. Awaatif Al", specality: "Dental Care" },
-  { id: 2, name: "Dr. Filipa Gaspar", specality: "Cardiology" },
-  { id: 3, name: "Dr. Sukhmeet Gorae", specality: "Neurological" },
-  { id: 4, name: "Dr. Siri Jakobsson", specality: "Prediatrics" },
-];
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Section3() {
   return (
-    <div className="flex-col px-[120px] justify-center items-center text-[#002348] font-sans ">
-      <div className="text-center text-5xl font-bold leading-loose mt-[46px]">
-        We Have The Best Specialist
+    <div className="flex px-[120px] space-x-8 items-center">
+      <div>
+        <div className="font-bold font-sans text-[54px] leading-[78px] text-[#003B79]">
+          Clinic With Innovative
+        </div>
+        <div className="font-base font-sans text-[20px] leading-[39px] text-[#002348] mt-[34px]">
+          We provide the most full medical services, so every person could heave
+          the oppurtunity to receive qualitative medical help.
+        </div>
+        <div className="flex items-center justify-center w-[186px] h-[60px] rounded-full bg-[#007FF4] text-[#FFFFFF] mt-[44px]">
+        <div className="font-bold font-sans text-[16px] leading-[20.11px]">
+         Learn More
+         </div>
+        </div>
       </div>
-      <div className="px-[370px] h-[78px] text-base font-normal leading-relaxed text-center">
-        We have a wide experience in experience design and strategy, with
-        locally-rooted knowledge.
+      <div className="my-[170px]">
+        <div className="relative w-[282px] h-[236px] text-center border  rounded-lg shadow-lg">
+          <StaticImage
+            src="../images/doctor-woman.png"
+            width={252}
+            height={252}
+            className="absolute  top-[-70px] left-1/2 transform -translate-x-1/2"
+          />
+        </div>
+        <div className="relative translate-y-[-100px] ml-[26px] text-[#002348] font-bold text-[24px]">
+          Qualified Doctors
+        </div>
+        <div className="relative w-[282px] h-[236px] text-center border mt-[170px] rounded-lg shadow-lg">
+          <StaticImage
+            src="../images/doctor-woman copy 2.png"
+            width={232}
+            height={232}
+            className="absolute top-[-70px] left-1/2 transform -translate-x-1/2"
+          />
+        </div>
+        <div className="relative translate-y-[-116px] ml-[26px] text-[#002348] font-bold text-[24px]">
+          24 Hours Service
+        </div>
       </div>
-      <div className="flex justify-between">
-        {dataArray.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className="w-[274px] h-[448px] border rounded-[12px] shadow-lg flex-col 
-                             cursor-pointer shadow-lg  hover:outline-none hover:border-sky-500 hover:ring-1 hover:ring-sky-500"
-            >
-              <div className="h-[324px] bg-[#AED3E2] rounded-t-[12px] text-[#002348] text-left "></div>
-              <div className="font-sans">
-                <div className="pl-[34px] font-bold text-[24px] leading-[30.17px] mt-[25px]">{item.name}</div>
-                <div className=" pl-[34px] font-base text-[18px] leading-[22.63px] mt-[12px]">{item.specality}</div>
-              </div>
-            </div>
-          );
-        })}
+      <div className="flex flex-col items-center">
+        <div className="relative w-[282px] h-[236px] border rounded-lg shadow-lg">
+          <StaticImage
+            src="../images/doctor-woman copy.png"
+            width={232}
+            height={232}
+            className="absolute top-[-70px] left-1/2 transform -translate-x-1/2"
+          />
+        </div>
+        <div className="relative translate-y-[-116px] translate-x-[-20px] text-[#002348] font-bold text-[24px]">
+          Emergency Care
+        </div>
       </div>
     </div>
   );
