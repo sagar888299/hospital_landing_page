@@ -1,0 +1,21 @@
+.background1 {
+    background-image: url('../images/Oval + Oval Copy Mask.png');
+    background-size: cover;
+    background-position: center;
+    height: 953px;
+  }
+
+  .background2 {
+    background-image: url('../images/Oval Copy 2.png');
+    background-size: cover;
+    background-position: center;
+    height: 953px;
+  }
+
+  .background3 {
+    background-image: url('../images/Oval Copy 3.png');
+    background-size: cover;
+    background-position: right center;
+    height: 301px;
+    width: 301px;
+  }
