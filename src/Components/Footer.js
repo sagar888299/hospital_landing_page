@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navigationbar from "./Navigationbar";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -38,7 +38,7 @@ export default function Footer() {
   return (
     <div className="">
       <div className="h-[144px] bg-[#F7FBFF] ">
-        <Navbar
+        <Navigationbar
         contactbutton={false}/>
       </div>
       <div className=" px-[120px] bg-[#ECF4FF] h-[281px] ">

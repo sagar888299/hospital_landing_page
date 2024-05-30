@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar({ contactbutton }) {
+function Navigationbar({ contactbutton }) {
   return (
     <div className="flex px-[120px]">
       <div className="flex w-full justify-between items-center h-[90px]  relative">
@@ -30,4 +30,4 @@ function Navbar({ contactbutton }) {
   );
 }
 
-export default Navbar;
+export default Navigationbar;

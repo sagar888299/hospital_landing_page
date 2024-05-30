@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Navigationbar from "../Components/Navigationbar";
 import Section1 from "../Components/Section1";
 import Section2 from "../Components/Section2";
 import Section3 from "../Components/Section3";
@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <div>
       <div className="background1">  
-        <Navbar contactbutton={true} />
+        <Navigationbar contactbutton={true} />
         <Section1 />
       </div>
       <div className="h-[600px]">
@@ -40,4 +40,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Hospital Page</title>;
