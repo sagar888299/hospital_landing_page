@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Navbar from "../Components/navbar"
+
 
 const pageStyles = {
   color: "#232129",
@@ -41,7 +41,6 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Go home</Link>.
       </p>
-      <Navbar/>
     </main>
   )
 }
