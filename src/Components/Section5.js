@@ -61,7 +61,6 @@ export default function Section5() {
     }
   };
 
-
   return (
     <div className="font-sans">
       <div className="font-bold px-[120px] text-[54px] leading-[78px] pt-[80px] text-[#003B79]">

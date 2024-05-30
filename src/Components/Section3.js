@@ -13,9 +13,9 @@ export default function Section3() {
           the oppurtunity to receive qualitative medical help.
         </div>
         <div className="flex items-center justify-center w-[186px] h-[60px] rounded-full bg-[#007FF4] text-[#FFFFFF] mt-[44px]">
-        <div className="font-bold font-sans text-[16px] leading-[20.11px]">
-         Learn More
-         </div>
+          <div className="font-bold font-sans text-[16px] leading-[20.11px]">
+            Learn More
+          </div>
         </div>
       </div>
       <div className="my-[170px]">

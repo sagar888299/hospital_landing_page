@@ -5,8 +5,18 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const dataArray = [
   { id: 1, value: "Dental Care", src: "tooth.png", src2: "tooth2.png" },
   { id: 2, value: "Pulmonary", src: "lung.png", src2: "lungs.png" },
-  { id: 3, value: "Neurological", src: "human_brains.png", src2: "human_brains2.png" },
-  { id: 4, value: "Pediatrics", src: "pediatrics.png", src2: "pediatrics1.png" },
+  {
+    id: 3,
+    value: "Neurological",
+    src: "human_brains.png",
+    src2: "human_brains2.png",
+  },
+  {
+    id: 4,
+    value: "Pediatrics",
+    src: "pediatrics.png",
+    src2: "pediatrics1.png",
+  },
 ];
 
 export default function Section2() {
@@ -49,10 +59,18 @@ export default function Section2() {
       </div>
       <div className="flex justify-between mt-[69px]">
         {dataArray.map((item) => {
-          const imageNode = images.find((image) => image.node.base === item.src);
-          const imageNode2 = images.find((image) => image.node.base === item.src2);
-          const image = getImage(imageNode?.node.childImageSharp.gatsbyImageData);
-          const image2 = getImage(imageNode2?.node.childImageSharp.gatsbyImageData);
+          const imageNode = images.find(
+            (image) => image.node.base === item.src
+          );
+          const imageNode2 = images.find(
+            (image) => image.node.base === item.src2
+          );
+          const image = getImage(
+            imageNode?.node.childImageSharp.gatsbyImageData
+          );
+          const image2 = getImage(
+            imageNode2?.node.childImageSharp.gatsbyImageData
+          );
 
           return (
             <div
@@ -70,7 +88,9 @@ export default function Section2() {
                 />
               </div>
               <div
-                className={`font-sans font-bold pl-[44px] mt-[55px] text-xl leading-[30.17px] text-left transition-colors duration-500 ${hoveredItem === item.id ? "text-white" : "text-[#002348]"}`}
+                className={`font-sans font-bold pl-[44px] mt-[55px] text-xl leading-[30.17px] text-left transition-colors duration-500 ${
+                  hoveredItem === item.id ? "text-white" : "text-[#002348]"
+                }`}
               >
                 {item.value}
               </div>

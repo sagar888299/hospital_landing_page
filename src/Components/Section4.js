@@ -27,8 +27,12 @@ export default function Section4() {
             >
               <div className="h-[324px] bg-[#AED3E2] rounded-t-[12px] text-[#002348] text-left "></div>
               <div className="font-sans">
-                <div className="pl-[34px] font-bold text-[24px] leading-[30.17px] mt-[25px]">{item.name}</div>
-                <div className=" pl-[34px] font-base text-[18px] leading-[22.63px] mt-[12px]">{item.specality}</div>
+                <div className="pl-[34px] font-bold text-[24px] leading-[30.17px] mt-[25px]">
+                  {item.name}
+                </div>
+                <div className=" pl-[34px] font-base text-[18px] leading-[22.63px] mt-[12px]">
+                  {item.specality}
+                </div>
               </div>
             </div>
           );

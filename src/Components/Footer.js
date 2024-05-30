@@ -38,35 +38,34 @@ export default function Footer() {
   return (
     <div className="">
       <div className="h-[144px] bg-[#F7FBFF] ">
-        <Navigationbar
-        contactbutton={false}/>
+        <Navigationbar contactbutton={false} />
       </div>
       <div className=" px-[120px] bg-[#ECF4FF] h-[281px] ">
-      <div className="flex gap-[9px] ">
-        {dataArray.map((item) => {
-          const imageNode = images.find(
-            (image) => image.node.base === item.src
-          );
-          const image = getImage(
-            imageNode?.node.childImageSharp.gatsbyImageData
-          );
-          return (
-            <div key={item.id} className="mt-[49px]">
-              <div>
-                <GatsbyImage
-                  image={image}
-                  alt={item.value}
-                  width = {51}
-                  height = {51}
-                />
+        <div className="flex gap-[9px] ">
+          {dataArray.map((item) => {
+            const imageNode = images.find(
+              (image) => image.node.base === item.src
+            );
+            const image = getImage(
+              imageNode?.node.childImageSharp.gatsbyImageData
+            );
+            return (
+              <div key={item.id} className="mt-[49px]">
+                <div>
+                  <GatsbyImage
+                    image={image}
+                    alt={item.value}
+                    width={51}
+                    height={51}
+                  />
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-      <div className="text-sans text-base font-light leading-9 text-left text-[#667C94] mt-[16px]">
-         ©2023 - 011BQ 
-      </div>
+            );
+          })}
+        </div>
+        <div className="text-sans text-base font-light leading-9 text-left text-[#667C94] mt-[16px]">
+          ©2023 - 011BQ
+        </div>
       </div>
     </div>
   );

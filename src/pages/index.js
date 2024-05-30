@@ -7,12 +7,11 @@ import Section4 from "../Components/Section4";
 import Section6 from "../Components/Section6";
 import Section5 from "../Components/Section5";
 import Footer from "../Components/Footer";
-import '../Styles/Style.css';  
 
 const IndexPage = () => {
   return (
     <div>
-      <div className="background1">  
+      <div className="background1">
         <Navigationbar contactbutton={true} />
         <Section1 />
       </div>
@@ -20,19 +19,19 @@ const IndexPage = () => {
         <Section2 />
       </div>
       <div className="h-[1127px]">
-        <Section3/>
+        <Section3 />
       </div>
       <div className="background2 h-[953px]">
-        <Section4/>
+        <Section4 />
       </div>
       <div className="h-[700px] bg-[#F8FDFF]">
-        <Section5/>
+        <Section5 />
       </div>
       <div className="h-[698px] bg-[#F8FDFF]">
-        <Section6/>
+        <Section6 />
       </div>
       <div className="h-[385px]">
-       <Footer/>
+        <Footer />
       </div>
     </div>
   );
