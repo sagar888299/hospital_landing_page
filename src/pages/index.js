@@ -7,7 +7,7 @@ import Section4 from "../Components/Section4";
 import Section6 from "../Components/Section6";
 import Section5 from "../Components/Section5";
 import Footer from "../Components/Footer";
-import '../Styles/style.css';  
+import '../Styles/Style.css';  
 
 const IndexPage = () => {
   return (
