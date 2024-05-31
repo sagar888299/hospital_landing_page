@@ -11,7 +11,7 @@ import Footer from "../Components/Footer";
 const IndexPage = () => {
   return (
     <div>
-      <div className="background1">
+      <div className="background">
         <Navigationbar contactbutton={true} />
         <Section1 />
       </div>

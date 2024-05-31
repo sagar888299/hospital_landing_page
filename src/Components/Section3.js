@@ -24,7 +24,7 @@ export default function Section3() {
             src="../images/doctor-woman.png"
             width={252}
             height={252}
-            className="absolute  top-[-70px] left-1/2 transform -translate-x-1/2"
+            className="absolute top-[-100px] left-1/2 transform -translate-x-1/2"
           />
         </div>
         <div className="relative translate-y-[-100px] ml-[26px] text-[#002348] font-bold text-[24px]">
@@ -35,7 +35,7 @@ export default function Section3() {
             src="../images/doctor-woman copy 2.png"
             width={232}
             height={232}
-            className="absolute top-[-70px] left-1/2 transform -translate-x-1/2"
+            className="absolute top-[-100px] left-1/2 transform -translate-x-1/2"
           />
         </div>
         <div className="relative translate-y-[-116px] ml-[26px] text-[#002348] font-bold text-[24px]">
@@ -48,7 +48,7 @@ export default function Section3() {
             src="../images/doctor-woman copy.png"
             width={232}
             height={232}
-            className="absolute top-[-70px] left-1/2 transform -translate-x-1/2"
+            className="absolute top-[-100px] left-1/2 transform -translate-x-1/2"
           />
         </div>
         <div className="relative translate-y-[-116px] translate-x-[-20px] text-[#002348] font-bold text-[24px]">
